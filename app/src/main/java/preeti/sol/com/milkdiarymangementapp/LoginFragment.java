@@ -20,6 +20,10 @@ public class LoginFragment extends Fragment {
 
 Button loginButton;
 TextView signupTextView;
+
+int a=10;
+
+
     public LoginFragment() {
         // Required empty public constructor
     }
