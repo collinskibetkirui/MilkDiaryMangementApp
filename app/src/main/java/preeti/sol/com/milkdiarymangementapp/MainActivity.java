@@ -20,5 +20,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.root_layout,loginFragment);
         ft.commit();
+
+        // this is my first push to github.
     }
 }
