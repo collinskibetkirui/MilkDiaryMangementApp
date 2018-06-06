@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context="preeti.sol.com.milkdiarymangementapp.OtpFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginBottom="75dp"
+        android:text="Verification Code"
+        android:textAlignment="center"
+        android:textColor="@color/bg_screen3"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/city_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:text="India (+91)"
+            android:textColor="@color/bg_screen3" />
+
+        <EditText
+            android:id="@+id/mob_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:layout_margin="10dp"
+            android:hint="Your Phone Number"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/bg_screen3" />
+
+        <TextView
+            android:id="@+id/otp_msg_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="We will send you a One Time SMS message Carrier rates may apply "
+            android:textAlignment="center"
+            android:textColor="@color/bg_screen3"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_rounded_bt"
+        android:backgroundTint="@color/bg_screen3"
+        android:text="Submit"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>

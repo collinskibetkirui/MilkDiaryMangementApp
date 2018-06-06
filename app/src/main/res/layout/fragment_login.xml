@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context="preeti.sol.com.milkdiarymangementapp.LoginFragment">
+
+    <ImageView
+        android:id="@+id/login_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_below="@+id/login_iv"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:drawableLeft="@drawable/ic_user"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/bg_screen3" />
+
+    <EditText
+        android:id="@+id/password_editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_editText"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/bg_screen3" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_editText2"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_rounded_bt"
+        android:backgroundTint="@color/bg_screen3"
+        android:text="Log in"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/forgot_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="40dp"
+        android:text="Forgot Password..?"
+        android:textColor="@color/bg_screen3"
+        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/signup_textView2"
+            android:layout_toRightOf="@+id/forgot_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="19dp"
+            android:text="Signup"
+            android:textColor="@color/bg_screen3"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
