@@ -23,7 +23,7 @@ TextView signupTextView;
     public LoginFragment() {
         // Required empty public constructor
     }
-
+//  by preeti edit
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
